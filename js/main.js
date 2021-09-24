@@ -13,6 +13,6 @@ const links = [
     }
 ]
 // get pointer to <ul> element
-var list = document.querySelector('div');
+var list = document.getElementById('list');
 links.forEach(link => {list.innerHTML+= `<li><a href="${link.url}">${link.label}</a></li>`;});
 
