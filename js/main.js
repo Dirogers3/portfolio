@@ -10,7 +10,12 @@ const links = [
     {
         label: "Week 3 notes",
         url : "week3/index.html"
+    },
+    {
+        label: "Week 4 notes",
+        url : "week4/index.html"
     }
+
 ]
 // get pointer to <ul> element
 var list = document.getElementById('list');

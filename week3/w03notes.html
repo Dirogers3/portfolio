@@ -11,19 +11,65 @@
     <div class="nav">
         <ul>
             <li class="navlis"><a class="navlinks" href="../index.html">Directory</a></li>
+            <li class="navlis"><a class="navlinks" href="index.html">Week 3</a></li>
         </ul>
     </div>
     <div class="content">
         <h1>W3 Notes</h1>
-        <p>We did some review reading.</p>
-        <h2>Notes from the video</h2>
+        <p>We did some review reading from chapters 5-7. It had some good information about the DOM and Evenlisteners.
+            I also enjoyed the reading on the "this" key word and how it is used.
+        </p>
+        <h2>Notes from reading</h2>
         <ul>
+            <li>
+
+                <ol>
+                    <li>Global context</li>
+                    <li>object contruction</li>
+                    <li>object method</li>
+                    <li>simple function</li>
+                    <li>arrow function</li>
+                    <li>event listener</li>
+                </ol>
+            </li>
+        </ul>
+        <h2>Chapter 5</h2>
+        <ul>
+            <li>Remove properties from objects bu using delete object.method</li>
+            <li>Nested objects are just like nested arrays</li>
+            <li>To see all the properties in an object use the for (const key in object) to loop through each key.</li>
+        </ul>
+        <h2>Chapter 6</h2>
+        <ul>
+            <li>Use typeof X to get the data type of X</li>
+            <li>document.body returns the body element</li>
+            <li>document.images retures a list of images in the document</li>
+            <li>document.links returns a list of links</li>
+            <li>document.getElementsByClassName('blah') will get element by class</li>
+            <li>
+                To add styles to the elements through javascript follow the example
+                <br>const heroes = document.getElementById('roster');<br>
+                const superman = heroes.children[0];
+                <br>
+                superman.style.border = "red 2px solid";<br>
+                << "red 2px solid" </li>
+        </ul>
+        <h2>Chapter 7</h2>
+        <ul>
+            <li>preventDefault() will stop a default befavior from happening. <br>
+                <p>const brokenLink = document.getElementById('broken');<br>
+
+                brokenLink.addEventListener('click',(event) => {<br>
+                    event.preventDefault();<br>
+                    console.log('Broken Link!');<br>
+                });</p>
             
+                this will stop the link from working normally and display in the console that it is broken.</li>
+            <li>stopPropagation() will stop events higher up in the chain. So be careful when using it.</li>
         </ul>
 
     </div>
     
-    <a href="./" class="back-link"><p class='back-button'>Back</p></a>
 
 </body>
 </html>

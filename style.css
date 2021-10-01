@@ -8,29 +8,36 @@ body, html {
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
     align-items: center;
 }
 
-li {
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width:120px;
+    height: 70px;
     list-style: none;
-    width: 120px;
-    margin-right: 50px;
 }
+
 
 .navlinks {
     color: white;
     text-decoration: none;
     font-size: 18px;
     display:flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width:120px;
+    height: 70px;
 }
 .navlis:hover {
     height: 70px;
     width: 120px;
     background-color: rgb(102, 102, 102);
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -71,4 +78,15 @@ li {
 .notes-button a {
     text-decoration: none;
     color: black;
+}
+
+.notes {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 45px;
+}
+
+.notes ul li {
+    width: 1500px;
 }
