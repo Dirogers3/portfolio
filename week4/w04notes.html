@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Week 4 Notes</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="navlis"><a class="navlinks" href="../index.html">Directory</a></li>
+            <li class="navlis"><a class="navlinks" href="index.html">Week 4</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>W4 Notes</h1>
+        <h2>Chapter 8 Forms</h2>
+            <ul>
+                <li>action='/method' to trigger methods</li>
+                <li>const form = documnet.forms[0] will allow selection of a single form from a page of multiople forms</li>
+                <li>button with the type set to 'reset' will reset the form.</li>
+                <li>Disabled in the button with type as submit will block the submit button until Disabled is false.</li>
+            </ul>
+        <h2>Chapter 12 Object Oriented Programming</h2>
+            <ul>
+                <li>Static Methods: Static can be used infront of a function. It is called just by just using the class rather than the instances of the class</li>
+                <li>Prototype allows us to create new properties and methods even after the instanciation of the class.</li>
+                <li>To find the prototypes, object.getPrototypeOf(instance) or instance.__proto__</li>
+                <li>Object.assign(objecta, objectb) will combine two objects into one.</li>
+            </ul>
+        <h2>Chapter 15 Modern Javascript</h2>
+            <ul>
+                <li>templates can help web pages to be more dynamic with content. We can do pu, handlebars, with {{}} and EJS with <%= bla %></li>
+                <li>
+                    <h3>Node Package Manager (npm)</h3>
+                    <ol>
+                        <li>npm init - will build the starting project files. It will create a package.json</li>
+                        <li>npm list will show all the installed packages</li>
+                        <li>npm update will update all the packages</li>
+                        <li>
+                            <h3>folder structure</h3>
+                            <ul>
+                                <li>src</li>
+                                <ul>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>views</li>
+                                    <li>tests</li>
+                                </ul>
+                                <li>dist</li>
+                                <ul>
+                                    <li>index.html</li>
+                                    <li>bundle.min.js</li>
+                                </ul>
+                                <li>package.json</li>
+                                <li>node_modules</li>
+                                <li>README</li>
+                                <li>.gitignore (to upload to github without including the thousands of node files)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+    </div>
+    
+
+</body>
+</html>
