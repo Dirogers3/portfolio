@@ -16,15 +16,10 @@
     </div>
     <div class="todolist-main">
     <h1>Todos</h1>
-    <ul class='task-list'></ul>
-    <ul class='task-info'>
-        <li id="tasks-left"></li>
-        <button type="button" id = "display">All</button>
-        <button type="button" id = "active">Active</button>
-        <button type="button" id = "display_completed">Completed</button><br>
-    </ul>
-    <form class="task-form">
-        <input type="text" name="task" class="task-input">
+    <div class='list' id='list'>
+    </div>
+    <form onsubmit="return false" id="taskform">
+        <input type="text" name="task" id="task">
         <button type='submit'>+</button>
     </form>
        
