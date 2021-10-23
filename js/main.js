@@ -26,6 +26,6 @@ const links = [
 
 ]
 // get pointer to <ul> element
-var list = document.getElementById('list');
+var list = document.getElementById('main-list');
 links.forEach(link => {list.innerHTML+= `<li><a href="${link.url}">${link.label}</a></li>`;});
 
