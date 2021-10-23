@@ -76,10 +76,6 @@ function addTask(content) {
   rendertaskList(task);
 }
 
-const display = document.getElementById('active');
-display.addEventListener('click', e => {
-})
-
 const form = document.querySelector('.task-form');
 form.addEventListener('submit', event => {
   event.preventDefault();
