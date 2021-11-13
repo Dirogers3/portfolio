@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Week 9 Notes</title>
+    
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li class="navlis"><a class="navlinks" href="../index.html">Directory</a></li>
+            <li class="navlis"><a class="navlinks" href="index.html">Week 9</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>W9 Notes</h1>
+        <h2>Chapter 9: The Window Object</h2>
+        <ul>
+            <li>window.confirm('Do you wish to continue?') will prompt the user with a cancel and okay buttons that return a boolean.</li>
+            <li>window.propt('please enter your name:') will prompt an input box for the user to type something in. Text will be return as a string if clicked on OK</li>
+            <li>window.navigator.userAgent will tell you the browser and OS</li>
+            <li>window.history.go(1) to go forward 1 page, (-1) to go back one page.</li>
+            <li>To determine the screen width of the device you can do window.screen.width </li>
+            <li>cookies are local storage on the browser for the user. We shouldn't store any sensative data on this though as anyone in can get into this.</li>
+        </ul>
+        <h2>Chapter 12: HTML5 APIs</h2>
+        <ul>
+            <li>I will be building a weather app and the Geolocation api will be very useful.</li>
+            <li>navigator.geolocation.getCurrentPosition(youAreHere)</li>
+            <li>
+                <p>function youAreHere(position) {
+    console.log(`Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`); 
+}</p>
+            </li>
+            <li>I'll then beable to pass the coordinates to my api to get the weather to the location of the device. I'll use this information for the home page of the website.</li>
+        </ul>
+    </div>
+
+<script src="canvas.js"></script>
+</body>
+
+</html>
