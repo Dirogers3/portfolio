@@ -175,3 +175,23 @@ input[type="checkbox"] {
     width: 350px;
     align-items:center;
   }
+
+  .pokemon-card {
+      border: 2px solid black;
+      padding: 5px 24px 34px 10px;
+      width: 175px;
+      border-radius: 5px;
+      background-color: wheat;
+  }
+
+  #pokemon-name {
+      text-transform: uppercase;
+  }
+
+  .error {
+        color: red;
+  }
+
+  input:invalid {
+      border: 2px solid red;
+  }

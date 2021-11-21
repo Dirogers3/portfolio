@@ -21,9 +21,28 @@
         <h1>W10 Notes</h1>
         <h2>MDN: Validating Forms</h2>
         <ul>
-            
+            <li>Some of the built in form validations are required, minlength & maxlength, min & max(numbers), and patterns.</li>
         </ul>
         <h2>MDN: Using Fetch</h2>
+        <ul>
+            <li>Remember to treat all api calls as a promise. I always forget this and it makes my code super confusing</li>
+            <li>You can use fetch to upload data, by using a method key value pair. </li>
+            <li>Always use a catch to get the errors, just incase a api fetch failed.</li>
+        </ul>
+        <h2>Project</h2>
+        <p>We have a small project that uses form validations and API fetch call.</p>
+        <ul>
+            <li>The form has validations on the client side that make sure that there is something in the input box before submit.</li>
+            <li>After the form is submitted, there is a validation on the server side that check to see if the pokemon exists, if it doesn't it will return a red error.</li>
+            <li>When a correct pokemon is put in, the submit button will call an api functiont that retrieves a specific pokemon.</li>
+            <li>After the pokemon information is retrieved, it is then displayed in a nice format so users can read it.</li>
+            <li>Some examples of pokemon are bulbasaur, pikachu, charmander, or mew</li>
+        </ul>
+        <form onsubmit="getPokemonByName(); return false">
+            <label for="pokemon">Pokemon:</label>
+            <input type="text" name="pokemonName" id="pokemonName" required>
+            <input type="submit" value="Submit">
+        </form>
         <ul id="pokemon-list">
 
         </ul>
